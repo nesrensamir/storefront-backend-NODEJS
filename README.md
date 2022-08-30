@@ -5,24 +5,24 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 
 ###Database Creation
-# create user
+* create user
 CREATE USER <username> WITH PASSWORD <password>;
 
-# create Database
+* create Database
 CREATE DATABASE storefront; CREATE DATABASE <Data base name>;
 
-# grant all databases to the user
+* grant all databases to the user
 GRANT ALL PRIVILEGES ON DATABASE <database name> TO <username>; 
 GRANT ALL PRIVILEGES ON DATABASE <testing database name> TO <username>;
 
 ### Database Migrations
-# to create the same data schema run this command to create all tables 
+* to create the same data schema run this command to create all tables 
 db-migrate up
-# to drop the data schema tables run this command to drop each table separately
+* to drop the data schema tables run this command to drop each table separately
 db-migrate down
-# to reset the data schema tables run this command
+* to reset the data schema tables run this command
 db-migrate reset
-# Migrations used in this repo
+* Migrations used in this repo
 db-migrate create add-users-table --sql-file
 db-migrate create add-products-table --sql-file
 db-migrate create add-orders-table --sql-file
@@ -30,17 +30,17 @@ db-migrate create add-orders-products-table --sql-file
 
 
 ### Environmental Variables (.env file contents)
-  to connect with the database use the following environmental variables
-  PORT ----- the server running on the port of 3000
-  POSTGRES_HOST ----- the host (127.0.0.1)
-  POSTGRES_DB ----- name of the database 
-  POSTGRES_DB_TEST ----- name of the test database 
-  POSTGRES_USER ----- the user name or the owner of the database(username)
-  POSTGRES_PASSWORD ----- password of the database
-  ENV ----- dev (default)
-  BCRYPT_PASSWORD ----- pepper text to hash the password
-  SALT_ROUNDS ----- how many round for salting the password (10)
-  TOKEN_SECRET ----- secret text for token 
+  * to connect with the database use the following environmental variables
+  * PORT ---> the server running on the port of 3000
+  * POSTGRES_HOST ---> the host (127.0.0.1)
+  * POSTGRES_DB ---> name of the database 
+  * POSTGRES_DB_TEST ---> name of the test database 
+  * POSTGRES_USER ---> the user name or the owner of the database(username)
+  * POSTGRES_PASSWORD ---> password of the database
+  * ENV ---> dev (default)
+  * BCRYPT_PASSWORD ---> pepper text to hash the password
+  * SALT_ROUNDS ---> how many round for salting the password (10)
+  * TOKEN_SECRET ---> secret text for token 
 
 #### Required Technologies
 
