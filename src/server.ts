@@ -3,7 +3,7 @@ import users_routes from './handlers/users';
 import products_routes from './handlers/products';
 import orders_routes from './handlers/orders';
 const app = express(); 
-const port = 3000; 
+const port = process.env.PORT;
 
 
 app.get('/', async(_req: Request, res: Response) : Promise<void> =>{
