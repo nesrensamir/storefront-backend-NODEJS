@@ -6,7 +6,8 @@
    "scripts": {
       "build": "npx tsc",
       "dev": "nodemon src/server.ts",
-      "start": "tsc && node build/server.js"
+      "start": "tsc && node build/server.js" 
+      "test": "npm run build && db-migrate up --env test && jasmine && db-migrate reset:test"
    },
    "author": "",
    "license": "ISC",
