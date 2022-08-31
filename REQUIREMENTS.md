@@ -130,4 +130,18 @@ Method - POST
 Authorization required - Bearer
 Parameters - orderId, productId, quantity
 Usage - Add products to an existing order
-http://localhost:3000/orders/:id/products
+http://localhost:3000/orders/:id/products 
+
+
+# Database 
+
+* users Table 
+
+![users](https://user-images.githubusercontent.com/86182948/187678369-f893556c-6986-4498-b6a9-3fb82c2cb70f.PNG)
+
+* orders 
+![orders](https://user-images.githubusercontent.com/86182948/187678616-76a3164f-27c6-42d4-b6ed-2eda6ca56f14.PNG)
+
+* products 
+![products](https://user-images.githubusercontent.com/86182948/187678703-4b3c5eac-af43-4ea3-aab0-a03f77782d1e.PNG)
+
