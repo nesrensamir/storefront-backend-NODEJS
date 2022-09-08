@@ -46,7 +46,7 @@ db-migrate create add-orders-products-table --sql-file
 
 The application must make use of the following libraries:
 
-* Postgres for the database
+* Postgres for the database " Default port is 5432. "
 * Node/Express for the application logic
 * dotenv from npm for managing environment variables
 * db-migrate from npm for migrations
